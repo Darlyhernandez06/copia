@@ -12,31 +12,36 @@
 </head>
 
 <body>
-  <header>
+
+  <!-- menu -->
+  <header class="header">
     <div class="contenedor header__menu">
-      <a href="">
+      <!-- logo -->
+      <a href="#">
         <img src="logo.png" alt="logo">
       </a>
+      <!-- navegación -->
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="">About</a>
-          </li>
-          <li class=" nav__item">
-            <a class="nav__link" href="">Course</a>
+            <a href="#" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="">Blog</a>
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Courses</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
           </li>
         </ul>
       </nav>
-
-
-      <!--login-->
+      <!-- login -->
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link nav__link--secundario" href="">Login</a>
+            <a href="#" class="nav_link nav_link--secundario">Login</a>
           </li>
           <li class="nav__item">
             <button class="nav__boton">
@@ -46,97 +51,142 @@
         </ul>
       </nav>
     </div>
-
-    <!--seccion de inicio-->
-
-    <section>
-      <div class="contenedor inicio">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur.
-        </h1>
-        <h2>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae asperiores aperiam eveniet velit facilis
-          atque molestiae sequi vitae, praesentium ut molestias cum cumque, voluptas at. Possimus ab molestiae
-          dignissimos quisquam.
-        </p>
-        <div>
-          <a href="">Lets star</a>
-          <a href="">Leer mas</a>
-        </div>
-      </div>
-      <div>
-        <button>
-          <i class="bi bi-arrow-left"></i>
-        </button>
-        <button>
-          <i class="bi bi-arrow-right"></i>
-        </button>
-      </div>
-    </section>
   </header>
 
   <main>
-    <!--banner-->
-    <section>
-      <div class="contenedor inicio">
+    <!-- sección inicio -->
+    <section id="inicio">
+      <div class="contenedor">
+
+        <!-- slider -->
+        <div class="slider">
+          <div class="slider__contender">
+            <div class="slider__iformacion">
+              <h1 class="slider__titulo">
+                ADSO<span class="titulo__flaco"> 2696521</span>
+              </h1>
+              <h2>
+                Analisis y desarrollo de sistemas de información
+              </h2>
+              <p class="slider__parrafo">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti quaerat, eaque quam
+                architecto
+                fugiat incidunt impedit quia obcaecati veniam et dicta ullam sed odit aut velit ea veritatis itaque
+                adipisci
+                nam hic modi repellendus unde. Mollitia, enim repellat cupiditate corporis cumque minima consequuntur
+                accusamus ad dignissimos inventore. Totam, voluptatibus!
+              </p>
+              <div class="slider__botones">
+                <a href="#" class="botonn">lets start</a>
+                <a href="#" class="botonn botonn--blanco">Read more</a>
+              </div>
+            </div>
+            <figure class="slider__imagen">
+              <img src="estudiante.png" alt="pareja" class="slider__img">
+            </figure>
+          </div>
+          <div class="slider__accion">
+            <button class="accion__flecha">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="accion__flecha">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- banner negro -->
+    <section class="bg-black">
+      <div class="contenedor llamado">
         <p>
-          Lorem ipsum.
+          Lorem, ipsum dolor.
         </p>
-        <div>
+        <div class="llamado__fecha">
           <p>edition</p>
           <p>2022</p>
         </div>
       </div>
     </section>
 
-    <!--explore-->
+    <!-- explore -->
+    <section class="gris total">
+      <div class="contenedor explore">
+        <!-- primera area -->
+        <div class="uno text">
+          <p>EXPLORE.</p>
+        </div>
+        <!-- segunda area -->
+        <div class="dos grafico">
+          <figure>
+            <img class="imagen" src="imagen.png" alt="persona">
+          </figure>
+          <button class="flecha">
+            <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
+        <!-- tercera area -->
+        <div class="tres text">
+          <p>ADOUT.</p>
+        </div>
+        <!-- cuarta area -->
+        <div class="cuatro text_medio">
+          <p>
+            Lorem, ipsum.
+          </p>
+        </div>
+        <!-- quinta area -->
+        <div class="cinco"></div>
+        <!-- sexta area -->
+        <div class="sexto text_medio">
+          <p>Lorem, ipsum.</p>
+        </div>
+        <!-- septima area -->
+        <div class="septimo text">
+          <p>Lorem, ipsum.</p>
+        </div>
+        <!-- octava area -->
+        <div class="octavo">
+        </div>
+        <div class="noveno text">
+          Lorem,<br> ipsum dolor.
+        </div>
+    </section>
+
+    <!-- cards -->
     <section>
-      <div class="contenedor inicio">
-        <p>explore</p>
-        <p>online curses</p>
-      </div>
-      <div class="contenedor inicio">
-        <figure>
-          <img src="" alt="persona">
-        </figure>
-        <button>
-          <i class="bi bi-arrow-down"></i>
-        </button>
-      </div>
-      <div class="contenedor inicio">
-        <p>about</p>
-        <p>online curses</p>
+      <div class="contenedor_card">
+        <div class="card">
+          <h1 class="card__title">Level 1</h1>
+          <p class="card__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam accusantium ipsam rerum omnis ipsa animi
+            consectetur aspernatur nam quibusdam fugiat!
+          </p>
+          <a class="botonn" href="#">read more</a>
+        </div>
+        <div class="card card--border">
+          <h1 class="card__title">Level 2</h1>
+          <p class="card__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam accusantium ipsam rerum omnis ipsa animi
+            consectetur aspernatur nam quibusdam fugiat!
+          </p>
+          <a class="botonn" href="#">read more</a>
+        </div>
+        <div class="card">
+          <h1 class="card__title">Level 3</h1>
+          <p class="card__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam accusantium ipsam rerum omnis ipsa animi
+            consectetur aspernatur nam quibusdam fugiat!
+          </p>
+          <a class="botonn">read more</a>
+        </div>
       </div>
     </section>
 
-    <!--card-->
-    <section>
-      <div class="contenedor inicio">
-        <h1>Level 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non ab modi reprehenderit eveniet vitae,
-          accusantium sed obcaecati repellendus, porro libero ipsa iusto, quos amet dicta officia voluptatem ex rem!</p>
-        <a href="#">read more</a>
-      </div>
 
-      <div class="contenedor inicio">
-        <h1>Level 2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non ab modi reprehenderit eveniet vitae,
-          accusantium
-          sed obcaecati repellendus, porro libero ipsa iusto, quos amet dicta officia voluptatem ex rem!</p>
-        <a href="#">read more</a>
-      </div>
 
-      <div class="contenedor inicio">
-        <h1>Level 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non ab modi reprehenderit eveniet vitae,
-          accusantium
-          sed obcaecati repellendus, porro libero ipsa iusto, quos amet dicta officia voluptatem ex rem!</p>
-        <a href="#">read more</a>
-      </div>
-    </section>
 
     <!--trabajos-->
     <section>
