@@ -323,21 +323,248 @@ text-align: center;
 
 /*trabajos*/
 
+
 .contenedor__work
 {
-  height: 100vh;
-  background-color: #812181;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  grid-template-columns: auto;
+  display: grid;
+  grid-template: 
+  "texto centrado caminando" 100px 
+  "texto centrado imagen" 200px
+  "texto centrado imagen" 300px/  800px 150px 650px ;
 
 }
-.work__text
-{
-  flex: 1;
+
+.work__text{
+  grid-area: texto;
+  flex-direction: column;
+  justify-content: center;
 }
-.work__img
+
+.work_centro {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  grid-area: centrado;
+}
+
+.texto_centro {
+rotate: 90deg;
+}
+
+.caminando {
+  grid-area: caminando;
+}
+
+.work__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: imagen;
+}
+
+
+
+/*--negrito*/
+
+.contenedor_inicio {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  margin: auto auto auto;
+  /*background-color: #812181;*/
+}
+
+.item_1
 {
-  flex: 1;
+display: flex;
+justify-content: end;
+flex-direction: column;
+}
+
+.txt {
+  transform: rotate(90deg);
+}
+
+.item_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo_2 {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 30px;
+}
+
+.parrafo_2 {
+  font-size: 20px;
+}
+
+.texto_5 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.img5 {
+  display: flex;
+  justify-content: right;
+  min-width: 450px;
+  /*margin-right:auto;*/
+}
+
+.a{
+  display: flex;
+  justify-content: top;
+  margin-top: 30px;
+}
+
+/*magenta*/
+
+.contenedor_magenta{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.magenta_uno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.seccion_magenta{
+  background-color: #812181
+}
+
+.magenta_texto1{
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.magenta_texto2{
+  font-size: 40px;
+  font-weight: lighter;
+  padding-bottom: 30px;
+}
+
+.magenta_botonn{
+  background: black;
+  padding: 12px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.magenta_dos{
+  opacity: 60%;
+}
+
+.magenta_flecha{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border: none;
+  font-size: 42px;
+  padding: 20px;
+}
+
+.flecha{
+  color: white;
+  border: solid 1px white;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*testimonio*/
+
+/* Estilo para el contenedor principal */
+.cabeza_testimonios {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.titulo-grande {
+  font-size: 2em; 
+  font-weight: bold; 
+}
+
+.titulo-chiquito {
+  font-weight: normal; 
+}
+
+.become_testimonios {
+  font-weight: bold; 
+}
+
+.grid_testimonios{
+  display: grid;
+  grid-template: 
+  "testiuno testidos"
+  "testitres testicua";
+}
+.testimonio_1 {
+  display: flex;
+  grid-area: testiuno;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_2 {
+  display: flex;
+  grid-area: testidos;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_3 {
+  display: flex;
+  grid-area: testitres;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+.testimonio_4 {
+  display: flex;
+  grid-area: testicua;
+  align-items: center;
+  padding: 30px; /* Ajusta según sea necesario */
+}
+
+.imagen-circular {
+  border-radius: 50%;
+  background-color: #000;
+  width: 400px; /* Tres veces más grande */
+  height: 300px; /* Tres veces más grande */
+  margin-right: 30px; /* Espacio entre la imagen y el contenido */
+}
+
+.contenido_testimonios{
+  flex-grow: 1;
+}
+
+.mini_titulo_testimonios{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nombre_testimonios {
+  font-weight: bold;
+  margin-right: 5px; /* Espacio entre el nombre y la fecha */
+}
+
+.fecha_testimonios {
+  color: gray;
+}
+
+.comentario_testimonios{
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.estrellas{
+  color: #812181;
+  font-size: 20px;
 }
